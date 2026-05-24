@@ -1,0 +1,8 @@
+birthDate=input("Enter your birth day date:")
+year=birthDate.split('-')
+print(year)
+print(type(year))
+print(type(year[0]))
+yearInInt=int(year[0])
+print(yearInInt)
+print("Your age is: ",(2026-yearInInt),"years")

@@ -1,0 +1,5 @@
+val=input()
+print(len(val))
+print(val+val)
+print(val[0])
+print(val[0:4])

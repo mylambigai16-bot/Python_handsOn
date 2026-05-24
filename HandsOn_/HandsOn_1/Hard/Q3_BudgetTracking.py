@@ -1,0 +1,7 @@
+income=float(input("Enter your monthly income:"))
+expense=input("Enter your expense:")
+ex_list=expense.split(' ')
+print(ex_list)
+print(type(ex_list))
+remBudget=income-(int(ex_list[0])+int(ex_list[1])+int(ex_list[2]))
+print(remBudget)

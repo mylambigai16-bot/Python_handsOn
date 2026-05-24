@@ -1,0 +1,5 @@
+score=input("Game Score:")
+print(type(score))
+Score=int(score)
+print("Game Score is ",Score)
+print(type(Score))

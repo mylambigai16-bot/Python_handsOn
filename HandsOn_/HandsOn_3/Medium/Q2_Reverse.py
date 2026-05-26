@@ -1,6 +1,8 @@
 num = int(input("Enter the number: "))
 c=0
 n=num
+
+print(len(str(num)))
 while n!=0:
     n//=10
     c+=1

@@ -1,3 +1,5 @@
+import re
 str1 = input("Enter text")
-str2 = str1.replace('!@#$%^&*','#')
-print(str2)
+pat = r"[!@#$%^&*,#]"
+s = re.sub(pat,"#",str1)
+print(s)

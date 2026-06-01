@@ -1,2 +1,5 @@
-input_list1 = [1, 2, 2, 3, 4, 4]
-print(set(input_list1))
+def  remove_duplicates(input_list) :
+    print(set(input_list1))
+
+input_list1 = list(input().split())
+remove_duplicates(input_list1) 

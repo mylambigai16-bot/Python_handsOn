@@ -3,4 +3,4 @@ def union_sets(s1,s2):
 
 s1 = set(input().split())
 s2 = set(input().split())
-union_sets(s1,s2)
+union_sets(s1,s2) 

@@ -53,6 +53,6 @@ for option in course_dropdown:
 
 #Choose language 
 driver.find_element(By.XPATH, "//label[@id='j_idt87:lang_label']").click()
-wait.until(ec.visibility_of_element_located(By.XPATH, "//ul[@id='j_idt87:lang_items']"))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//ul[@id='j_idt87:lang_items']")))
 print("Select suggestion element using iterate the li tag! ")
 driver.close()

@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-@pytest.fixture()
+@pytest.fixture() 
 def test_setup_and_tearDown():
     global driver
     driver =  webdriver.Chrome()

@@ -7,7 +7,16 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from datetime import datetime
 
-driver = webdriver.Chrome()
+
+options = webdriver.ChromeOptions()
+prefs = {
+    "autofill.profile_enabled": False,
+    "credentials_enable_service": False,
+    "profile.password_manager_enabled": False
+}
+
+options.add_experimental_option("prefs", prefs)
+driver = webdriver.Chrome(options=options)
 driver.maximize_window()
 driver.get("http://automationexercise.com")
 print(driver.title)
@@ -53,6 +62,13 @@ acc_created = driver.find_element(By.XPATH, "//div/h2/b").text
 print(acc_created)
 assert acc_created.lower() == "account created!"
 driver.find_element(By.XPATH, "//a[@class='btn btn-primary']").click()
+
+try:
+    close_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Close']")))
+    close_btn.click()
+except:
+    pass
+
 print(driver.current_url)
 user_loggedIn = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, "//a[contains(text(),'Logged in as')]"))).text
 print(user_loggedIn)

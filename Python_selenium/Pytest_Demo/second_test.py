@@ -10,7 +10,7 @@ def test_sample2():
     print("Helloo")
     assert 1+1 < 3
 
-@pytest.mark.smoke
+@pytest.mark.smoke 
 def test_sample3():
     print("welcome")
     assert 1 == 1

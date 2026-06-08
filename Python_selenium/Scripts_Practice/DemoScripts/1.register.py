@@ -5,14 +5,15 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from datetime import datetime
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-time.sleep(5)
 driver.get("http://automationexercise.com")
-time.sleep(5)
 print(driver.title)
 home = driver.find_element(By.XPATH, value="//li/a[text()=' Home']")
+driver.save_screenshot(f"screenshots/Homepage_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+home.screenshot(f"screenshots/Homepage_element_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
 assert home.is_displayed()
 login_btn = driver.find_element(By.XPATH, "//ul[@class='nav navbar-nav']/child::li[4]")
 login_btn.click()

@@ -5,34 +5,26 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get("https://automationexercise.com/")
 driver.maximize_window()
-if driver.title == "Automation Exercise":
-    print("Home page was launched")
-else:
-    print("Home page was not launched")
+assert driver.title == "Automation Exercise"
+print("Home page was launched")
 
 driver.find_element(By.XPATH,value="//a[text()=' Signup / Login']").click()
 login_page = driver.find_element(By.XPATH,value="//div[@class='login-form']/child::h2").text
-if login_page.__eq__("Login to your account"):
-    print("Login section was displayed")
-else:
-    print("Login section was not displayed")
+assert login_page.__eq__("Login to your account")
+print("Login section was displayed")
 
 driver.find_element(By.XPATH,value="//form[@action='/login']/child::input[2]").send_keys("mugan@gmail.com")
 driver.find_element(By.XPATH,value="//form[@action='/login']/child::input[3]").send_keys("123456")
 driver.find_element(By.XPATH,value="//form[@action='/login']/child::button").click()
 time.sleep(5)
 logged_in = driver.find_element(By.XPATH,value="//ul[@class='nav navbar-nav']/child::*[10]").is_displayed()
-if logged_in:
-    print("Logged in successfully")
-else:
-    print("Unsuccessfull login")
+assert logged_in is True
+print("Logged in successfully")
 
 driver.find_element(By.XPATH,value="//a[text()=' Logout']").click()
 time.sleep(5)
 url = driver.current_url
-if url.__eq__("https://automationexercise.com/login"):
-    print("Logout successfull")
-else:
-    print("Unsuccessfull logout")
+assert url.__eq__("https://automationexercise.com/login")
+print("Logout successfull")
 
 driver.close()

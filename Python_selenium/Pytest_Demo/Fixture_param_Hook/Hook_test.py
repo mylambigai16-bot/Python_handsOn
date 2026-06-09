@@ -11,7 +11,7 @@ def setup_function(function):
 def teardown_function(function):
     driver.close()
 
-def valid_product():
+def test_valid(test_setup_and_tearDown):
     driver.find_element(By.XPATH, "//input[@placeholder='Search']").send_keys("HP")
     driver.find_element(By.XPATH, "//button[@class='btn btn-default btn-lg']").click()
     assert driver.find_element(By.LINK_TEXT, "HP LP3065").is_displayed()

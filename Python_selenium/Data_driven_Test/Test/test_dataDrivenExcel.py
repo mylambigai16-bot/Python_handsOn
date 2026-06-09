@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as ec
 
 import Utility.logCreator
 
-@pytest.mark.parametrize("Username,Password",excelReader.get_data(r"ExcelFile\LoginData.xlsx","login"))
+@pytest.mark.parametrize("Username,Password",excelReader.get_data(r"./ExcelFile/LoginData.xlsx","login"))
 class TestLogin:
     def test_validLogin(self,Username, Password):
         log = Utility.logCreator.log_creator()

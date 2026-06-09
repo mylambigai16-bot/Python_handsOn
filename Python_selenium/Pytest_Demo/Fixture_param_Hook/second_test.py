@@ -1,12 +1,12 @@
 import pytest
 
 @pytest.mark.myl
-def test_sample1():
+def test_sample_1():
     print("Hai")
-    assert "myl".__eq__("myl")
+    assert "myl".__eq__("mylu")
 
 @pytest.mark.regression
-def test_sample2():
+def test_sample_2():
     print("Helloo")
     assert 1+1 < 3
 

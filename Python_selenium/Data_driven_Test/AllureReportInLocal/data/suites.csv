@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6915","test_validLogin[Admin-admin]","Test","2026-06-09","passed","2026-06-09","TestLogin","test_dataDrivenExcel","",""
+"","7579","test_validLogin[mylambigai-123456]","Test","2026-06-09","passed","2026-06-09","TestLogin","test_dataDrivenExcel","",""

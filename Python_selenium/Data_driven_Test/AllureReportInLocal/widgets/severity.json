@@ -1,0 +1,1 @@
+[{"uid":"66969ea9b62fb58a","name":"test_validLogin[Admin-admin]","time":{"start":1781002204001,"stop":1781002210916,"duration":6915},"status":"passed","severity":"normal"},{"uid":"360f27060bb06a73","name":"test_validLogin[mylambigai-123456]","time":{"start":1781002210924,"stop":1781002218503,"duration":7579},"status":"passed","severity":"normal"}]

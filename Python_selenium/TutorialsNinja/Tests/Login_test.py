@@ -10,7 +10,7 @@ from Utilities.logCreater import log_creator
 
 logger = log_creator()
 
-@pytest.mark.parametrize("email,password", excelReader.get_data("ExcelFile/LoginData.xlsx", "login"))
+@pytest.mark.parametrize("email,password", excelReader.get_data("Python_selenium/TutorialsNinja/ExcelFile/LoginData.xlsx", "login"))
 @pytest.mark.usefixtures("test_setup_and_tearDown")
 class TestLogin:
     def test_validLogin(self, email, password):

@@ -12,6 +12,7 @@ logger = log_creator()
 
 @pytest.mark.parametrize("email,password", excelReader.get_data("ExcelFile/LoginData.xlsx", "login"))
 @pytest.mark.usefixtures("test_setup_and_tearDown")
+@pytest.mark.order(1)  
 class TestLogin:
     def test_validLogin(self, email, password):
         logger.info(f"Running test_validLogin with email: {email} password: {password}")

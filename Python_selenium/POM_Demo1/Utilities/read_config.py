@@ -1,6 +1,14 @@
 from configparser import ConfigParser
+import os
 
 def get_config(category, key):
     con = ConfigParser()
-    con.read("./config.ini")
+
+    config_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "Config.ini"
+    )
+
+    con.read(config_path)
+
     return con.get(category, key)

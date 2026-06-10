@@ -53,3 +53,12 @@
 2026-06-10 17:17:51 - INFO - invalid search
 2026-06-10 17:17:51 - INFO - Assert the invalud search message!
 2026-06-10 17:17:51 - INFO - Invalid search successful
+2026-06-10 23:14:11 - INFO - valid search
+2026-06-10 23:14:12 - INFO - Search bar clicked
+2026-06-10 23:14:12 - INFO - Entered input to search bar
+2026-06-10 23:14:12 - INFO - Start searching...
+2026-06-10 23:14:12 - INFO - Assert by product is displayed for valid!
+2026-06-10 23:14:12 - INFO - valid search successful
+2026-06-10 23:14:15 - INFO - invalid search
+2026-06-10 23:14:16 - INFO - Assert the invalud search message!
+2026-06-10 23:14:16 - INFO - Invalid search successful

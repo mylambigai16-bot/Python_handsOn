@@ -65,3 +65,33 @@
 2026-06-10 21:54:43 - INFO - invalid search
 2026-06-10 21:54:43 - INFO - Assert the invalud search message!
 2026-06-10 21:54:43 - INFO - Invalid search successful
+2026-06-10 22:11:36 - INFO - invalid search
+2026-06-10 22:11:36 - INFO - Assert the invalud search message!
+2026-06-10 22:11:36 - INFO - Invalid search successful
+2026-06-10 22:12:13 - INFO - invalid search
+2026-06-10 22:12:25 - INFO - Assert the invalud search message!
+2026-06-10 22:12:25 - INFO - Invalid search successful
+2026-06-10 22:13:42 - INFO - Home page calling...
+2026-06-10 22:13:42 - INFO - Search page calling...
+2026-06-10 22:13:42 - INFO - Search bar clicked
+2026-06-10 22:13:42 - INFO - Enter  input to search bar
+2026-06-10 22:13:44 - INFO - Start searching...
+2026-06-10 22:13:44 - INFO - Assert by product is displayed for valid!
+2026-06-10 22:13:47 - INFO - invalid search
+2026-06-10 22:13:47 - INFO - Assert the invalud search message!
+2026-06-10 22:13:47 - INFO - Invalid search successful
+2026-06-10 22:13:52 - INFO - invalid search
+2026-06-10 22:13:52 - INFO - Assert the invalud search message!
+2026-06-10 22:13:52 - INFO - Invalid search successful
+2026-06-10 22:14:25 - INFO - Home page calling...
+2026-06-10 22:14:25 - INFO - Search page calling...
+2026-06-10 22:14:25 - INFO - Search bar clicked
+2026-06-10 22:14:25 - INFO - Enter  input to search bar
+2026-06-10 22:14:26 - INFO - Start searching...
+2026-06-10 22:14:26 - INFO - Assert by product is displayed for valid!
+2026-06-10 22:14:28 - INFO - invalid search
+2026-06-10 22:14:28 - INFO - Assert the invalud search message!
+2026-06-10 22:14:28 - INFO - Invalid search successful
+2026-06-10 22:14:56 - INFO - invalid search
+2026-06-10 22:14:58 - INFO - Assert the invalud search message!
+2026-06-10 22:14:58 - INFO - Invalid search successful

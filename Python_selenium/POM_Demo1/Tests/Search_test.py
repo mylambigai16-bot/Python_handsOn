@@ -7,6 +7,7 @@ logger = log_creator()
 @pytest.mark.usefixtures("test_setup_and_tearDown")
 class TestSearch:
 
+    @pytest.mark.order(1)
     def test_search_valid(self):
 
         homepage = Homepage(self.driver)
@@ -16,21 +17,23 @@ class TestSearch:
         logger.info("Search page calling...")
         homepage.click_searchh()
         searchpage.valid_search()
-        
-    def test_search_invalid(self):
-         
-        homepage = Homepage(self.driver)
-        searchpage = Searchpage(self.driver)
-        logger.info("invalid search")
-        homepage.invalid_search()
-        searchpage.invalid_search()
-        logger.info("Invalid search successful")
 
+    @pytest.mark.order(3)
     def test_no_product_search(self):
 
         homepage = Homepage(self.driver)
         searchpage = Searchpage(self.driver)
         logger.info("invalid search")
         homepage.no_product_search()
+        searchpage.invalid_search()
+        logger.info("Invalid search successful")
+
+    @pytest.mark.order(2)
+    def test_search_invalid(self):
+         
+        homepage = Homepage(self.driver)
+        searchpage = Searchpage(self.driver)
+        logger.info("invalid search")
+        homepage.invalid_search()
         searchpage.invalid_search()
         logger.info("Invalid search successful")
